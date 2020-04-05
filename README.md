@@ -5,6 +5,7 @@
  - Converts .bin pack files to humanly readable .txt files
  - Converts said .txt files back to .bin files
  - Allows for modification of existing packs
+ - Does not yet work for Battle Packs (Draft)
  - If a card in a .txt file can not be identified, it will be recorded in missingCards.txt
  - Check the /extra directory in the repository for a mass-converted list of all packs
   
