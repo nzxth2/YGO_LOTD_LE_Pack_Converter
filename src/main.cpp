@@ -10,7 +10,7 @@ int main(void)
 	WINDOW_DATA windowData;
     unsigned int initialWindowWidth=360;
     unsigned int initialWindowHeight=145;
-    SetupWindow(windowData,initialWindowWidth,initialWindowHeight,L"YGO LOTD LE Pack Converter v0.1");
+    SetupWindow(windowData,initialWindowWidth,initialWindowHeight,L"YGO LOTD LE Pack Converter v0.2");
 
     SetupGui(windowData,initialWindowWidth,initialWindowHeight);
 

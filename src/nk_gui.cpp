@@ -159,8 +159,9 @@ void HandleGui(){
                                         infoString="Could not read whole pack list. Make sure Common and Rare cards count is correct";
                                     }else{
                                         for (int i=1; i<1+commonCount; i++){
-                                            if (name_to_ID.count(lines[i])==1){
-                                                commonCards.push_back(lines[i]);
+                                            std::string cardName=StringToLower(lines[i]);
+                                            if (name_to_ID.count(cardName)==1){
+                                                commonCards.push_back(cardName);
                                             }else{
                                                 missingCommon.push_back(lines[i]);
                                             }
@@ -172,8 +173,9 @@ void HandleGui(){
                                                 infoString="Could not read whole pack list. Make sure Common and Rare cards count is correct";
                                             }else{
                                                 for (int i=1+commonCount+1; i<1+commonCount+1+rareCount; i++){
-                                                    if (name_to_ID.count(lines[i])==1){
-                                                        rareCards.push_back(lines[i]);
+                                                    std::string cardName=StringToLower(lines[i]);
+                                                    if (name_to_ID.count(cardName)==1){
+                                                        rareCards.push_back(cardName);
                                                     }else{
                                                         missingRare.push_back(lines[i]);
                                                     }

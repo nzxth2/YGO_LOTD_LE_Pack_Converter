@@ -87,3 +87,13 @@ std::string SimplifyString(const std::string &string){
         return result;
     }
 }
+
+std::string StringToLower(const std::string &string){
+    std::string result;
+    for(auto elem : string){
+        if (elem!=' '){
+            result+=std::tolower(elem);
+        }
+    }
+    return result;
+}
